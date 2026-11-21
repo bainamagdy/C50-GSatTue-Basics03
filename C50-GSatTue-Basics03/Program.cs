@@ -38,6 +38,15 @@ namespace C50_GSatTue_Basics03
 
             #endregion
 
+            #region QO4
+            //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+            //Print the result.
+            s1.Replace("Book Lis", "Library");
+            Console.WriteLine(s1);
+
+
+            #endregion
+
         }
     }
 }
