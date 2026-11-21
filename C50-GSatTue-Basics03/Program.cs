@@ -156,10 +156,24 @@ namespace C50_GSatTue_Basics03
             #endregion
 
             #region Q15
-            //Using the same books array, use a foreach loop to print every book title.
+            ////Using the same books array, use a foreach loop to print every book title.
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //foreach(string title in books)
+            //{
+            //    Console.WriteLine(title);
+
+            //}
+
+
+            #endregion
+
+            #region Q16
+            //Using the same books array, loop through it and print each title, but stop completely (break) once
+            //you reach "Refactoring".
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            foreach(string title in books)
+            foreach (string title in books)
             {
+                if (title == "Refactoring") break;
                 Console.WriteLine(title);
 
             }
