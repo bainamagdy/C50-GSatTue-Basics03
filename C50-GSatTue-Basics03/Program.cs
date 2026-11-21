@@ -89,26 +89,36 @@ namespace C50_GSatTue_Basics03
             #endregion
 
             #region Q10
-            string title = "Refactoring";
-            //Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is
-            //"Clean Code", "" if it's "Refactoring", and "Never heard of it" for anything else.
-             switch(title)
-            {
-                case "Clean Code":
-                    Console.WriteLine("Great choice!");
-                    break;
-                case "Refactoring":
-                    Console.WriteLine("Nice pick!");
-                    break;
-                default:
-                    Console.WriteLine("Never heard of it");
-                    break;
+            ////Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is
+            ////"Clean Code", "" if it's "Refactoring", and "Never heard of it" for anything else.
+            //string title = "Refactoring";
+
+            //switch (title)
+            //{
+            //    case "Clean Code":
+            //        Console.WriteLine("Great choice!");
+            //        break;
+            //    case "Refactoring":
+            //        Console.WriteLine("Nice pick!");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Never heard of it");
+            //        break;
 
 
 
 
-            }
-            ;
+            //}
+            //;
+            #endregion
+
+            #region Q11
+            //Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a
+            //variable sizeLabel(same rule as question 8: long if pages > 300).
+            int pages = 464;
+            var res = pages > 300 ? "long book" : "short book";
+            Console.WriteLine(res);
+
             #endregion
 
         }
