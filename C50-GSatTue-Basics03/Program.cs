@@ -62,11 +62,20 @@ namespace C50_GSatTue_Basics03
 
             #endregion
             #region Q07
-            //Build the same sentence again, but using string.Format().
+            ////Build the same sentence again, but using string.Format().
 
-            string title = "Clean Code ";
+            //string title = "Clean Code ";
+            //int pages = 464;
+            //Console.WriteLine(string.Format("book :{0}, pages:{1}", title, pages));
+            #endregion
+            #region Q08
+            //Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than
+            //300, otherwise prints "Short Book".
             int pages = 464;
-            Console.WriteLine(string.Format("book :{0}, pages:{1}", title, pages));
+            if (pages > 300) Console.WriteLine("long book");
+            else Console.WriteLine("short book");
+
+
             #endregion
 
         }
