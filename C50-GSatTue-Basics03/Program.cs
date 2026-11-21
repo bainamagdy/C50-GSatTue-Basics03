@@ -79,13 +79,36 @@ namespace C50_GSatTue_Basics03
             #endregion
 
             #region Q09
-            //Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is
-            //greater than 300 and isAvailable is true.Use the && operato
-            int pages = 464;
-            bool isAvailable = true;
-            if (pages > 300 && isAvailable is true) Console.WriteLine("You can borrow this book");
-            else Console.WriteLine("you can't borrow this book");
+            ////Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is
+            ////greater than 300 and isAvailable is true.Use the && operato
+            //int pages = 464;
+            //bool isAvailable = true;
+            //if (pages > 300 && isAvailable is true) Console.WriteLine("You can borrow this book");
+            //else Console.WriteLine("you can't borrow this book");
 
+            #endregion
+
+            #region Q10
+            string title = "Refactoring";
+            //Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is
+            //"Clean Code", "" if it's "Refactoring", and "Never heard of it" for anything else.
+             switch(title)
+            {
+                case "Clean Code":
+                    Console.WriteLine("Great choice!");
+                    break;
+                case "Refactoring":
+                    Console.WriteLine("Nice pick!");
+                    break;
+                default:
+                    Console.WriteLine("Never heard of it");
+                    break;
+
+
+
+
+            }
+            ;
             #endregion
 
         }
