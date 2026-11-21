@@ -50,12 +50,18 @@ namespace C50_GSatTue_Basics03
             #region Q05
             //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
             //Pages: 464" using the + operator.
-            string title = "Clean Code";
+            string title = "Clean Code ";
             int pages = 464;
-            Console.WriteLine($"book:{title} "+$"pages:{pages}");
+            Console.WriteLine("book: "+ title+ "pages:"+ pages);
 
             #endregion
 
+            #region Q06
+            //Build the same sentence as above, but using string interpolation ($"...").
+            Console.WriteLine($"book:{title} pages:{pages}");
+
+            #endregion
+                
         }
     }
 }
