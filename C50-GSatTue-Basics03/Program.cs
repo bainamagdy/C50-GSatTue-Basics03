@@ -168,16 +168,31 @@ namespace C50_GSatTue_Basics03
             #endregion
 
             #region Q16
-            //Using the same books array, loop through it and print each title, but stop completely (break) once
-            //you reach "Refactoring".
+            ////Using the same books array, loop through it and print each title, but stop completely (break) once
+            ////you reach "Refactoring".
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //foreach (string title in books)
+            //{
+            //    if (title == "Refactoring") break;
+            //    Console.WriteLine(title);
+
+            //}
+
+
+            #endregion
+
+
+            #region Q17
+            //Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
+            //continue, don't stop the loop).
+
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             foreach (string title in books)
             {
-                if (title == "Refactoring") break;
+                if (title == "The Pragmatic Programmer") continue;
                 Console.WriteLine(title);
 
             }
-
 
             #endregion
         }
