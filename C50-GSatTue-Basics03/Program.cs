@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using System.Drawing;
+using System.Security.Cryptography;
 using System.Threading.Channels;
 
 namespace C50_GSatTue_Basics03
@@ -14,6 +15,16 @@ namespace C50_GSatTue_Basics03
             string upperTitle = title.ToUpper();
             Console.WriteLine(title);
             Console.WriteLine(upperTitle);
+            #endregion
+
+            #region Q02
+            //Declare two separate string variables, both set to the literal "Clean Code".Use ReferenceEquals()
+            //to check if they point to the same object in memory.
+
+            string name = "Clean Code";
+            string name2 = "Clean Code";
+            Console.Write(ReferenceEquals(name,name2));
+
             #endregion
         }
     }
