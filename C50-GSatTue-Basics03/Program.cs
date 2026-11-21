@@ -113,12 +113,22 @@ namespace C50_GSatTue_Basics03
             #endregion
 
             #region Q11
-            //Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a
-            //variable sizeLabel(same rule as question 8: long if pages > 300).
-            int pages = 464;
-            var res = pages > 300 ? "long book" : "short book";
-            Console.WriteLine(res);
+            ////Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a
+            ////variable sizeLabel(same rule as question 8: long if pages > 300).
+            //int pages = 464;
+            //var res = pages > 300 ? "long book" : "short book";
+            //Console.WriteLine(res);
 
+            #endregion
+            #region Q12
+            //Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
+            //to print each book with its position number, like 1.Clean Code.
+
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            for(int i =0; i<books.Length; i++)
+            {
+                Console.WriteLine($"{books[i]} and it is postion number is {i}");
+            }
             #endregion
 
         }
